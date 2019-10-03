@@ -82,8 +82,6 @@ function loadStatsPage(){
 		var losses = 0;
 		for(row_counter = 2; row_counter < table.rows.length; row_counter++)
 		{
-			console.log(table.rows[row_counter].cells[2].innerHTML+" "+table.rows[row_counter].cells[3].innerHTML);
-			console.log(table.rows[row_counter].cells[2].innerHTML>table.rows[row_counter].cells[3].innerHTML);
 			if(parseInt(table.rows[row_counter].cells[2].innerHTML) > parseInt(table.rows[row_counter].cells[3].innerHTML)){
 				wins++;
 				table.rows[row_counter].cells[4].innerHTML = "Colorado";
